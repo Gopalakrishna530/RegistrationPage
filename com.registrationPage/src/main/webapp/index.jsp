@@ -1,76 +1,55 @@
-
 <!DOCTYPE html>
 <html>
-     
 <head>
-           <meta charset="UTF-8" />
-           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>
-      Student Registration Form
- </title>
+    <title>Login Page</title>
+    <style type="text/css">
+        form {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        label, input {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            margin: 10px 0 0 0;
+            padding: 5px 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+<body>
+   <center><h1>Login Page</h1></center>
+    <center>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+    </form>
+</center>
+    <script type="text/javascript">
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
            
-     
-<body bgcolor="orange">
-          
-         
-          <div style="margin: auto;width: 30%;">
-          <form>
-             <h2>Student Registration Form</h2>
-             <p>Fill in this form to register</p>
-             <br>
-             
-           
-             <label><b>First Name</b></label> 
-             <input type="text" placeholder="Enter your first name" name="first_name" required>
-             <br>
-             
-             <br>
-             <label><b>Last Name</b></label>
-             <input type="text" placeholder="Enter your last name" name="last_name" required>
-             <br>
-             <br>
-             <label><b>E-mail</b></label>
-             <input type="email" placeholder="Enter your e-mail" name="email" required>
-             <br>
-             <br>
-             <label><b>Date of Birth</b></label>
-             <input type="date" name="dob" required>
-             <br>
-             <br>
-             <label><b>Set Username</b></label>
-             <input type="text" placeholder="Set Username" name="username" required>
-             <br>
-             <br>
-             <label><b>Set Password</b></label>
-             <input type="password" placeholder="Set password" name="password" required>
-             <br>
-             
-             <br>
-             <label><b>Gender</b></label><br>
-             <input type="radio" name="gender" value="Male">
-             <label for="Male">Male</label><br>
-             <input type="radio" name="gender" value="Female">
-             <label for="Female">Female</label><br>
-             <input type="radio" name="gender" value="Others">
-             <label for="Others">Others</label>
-             <br>
-              
-            <br>
-            <label><b>Course :</b></label>   
-                 <select>
-                       <option value="Course">Course</option>    
-                       <option value="CS">Computer Fundamentals</option>  
-                       <option value="AI">Artificial Intelligence</option>  
-                       <option value="ML">Machine Learning</option>  
-                       <option value="OOPS">Object Oriented Programming</option>  
-                       <option value="DBMS">Database Management System</option>   
-                 </select>
-           <br>
-           <br>
-           <input type="button" value="Register"/> 
-          </form>
-     </div>
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'myusername' && password === 'mypassword') {
+                alert('Login successful!');
+            } else {
+                alert('Username or password incorrect. Please try again.');
+            }
+        });
+    </script>
 </body>
 </html>
