@@ -18,16 +18,5 @@
   <build>
     <finalName>com.registrationPage</finalName>
   </build>
-  <build>
-    <plugins>
-        <plugin>
-            <groupId>GopalWebProject</groupId>
-            <artifactId>com.registrationPage</artifactId>
-            <version>3.9.9</version> 
-            <configuration>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
 
 </project>
