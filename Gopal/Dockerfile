@@ -10,7 +10,7 @@ RUN mkdir -p /usr/local/tomcat && \
 
 ENV PATH="/usr/local/tomcat/bin:$PATH"
 
-COPY regi/Gopal/com.registrationPage.war /usr/local/tomcat/webapps/
+COPY /regi/Gopal/com.registrationPage.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
