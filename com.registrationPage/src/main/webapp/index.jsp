@@ -16,7 +16,7 @@
         input[type="submit"] {
             margin: 10px 0 0 0;
             padding: 5px 10px;
-            background-color: blue;
+            background-color: Red;
             color: white;
             border: none;
             border-radius: 5px;
