@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-   <center><h1>Login Page</h1></center>
+   <center><h1> My Login Page</h1></center>
     <center>
     <form>
         <label for="username">Username:</label>
